@@ -1,12 +1,61 @@
-# React + Vite
+# 👕 T-Shirt Customizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive web app to design and preview custom T-shirts with text and image overlays - built using **React**, **Tailwind CSS**, and **Vite**, and deployed on **Cloudflare Pages**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+[https://tshirt-store-app.pages.dev/](https://tshirt-store-app.pages.dev/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Features
+
+
+- **Image Upload:** Add custom images (logos, stickers, etc.) via drag-and-drop or file picker.
+- **Custom Text:** Add and edit up to three lines of text on your shirt.
+- **Theme Switcher:** Cycle through three unique color themes (press <kbd>Alt</kbd> + <kbd>Q</kbd>).
+- **Responsive Design:** Works beautifully on desktop and mobile.
+- **Lightning Fast:** Powered by Vite and optimized with Tailwind CSS.
+
+---
+
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repo
+
+git clone https://github.com/SatvikSarthak/tshirt-store-app.git
+cd tshirt-customizer
+
+
+
+### 2. Install Dependencies
+
+npm install 
+
+
+
+### 3. Start the Development Server
+
+npm run dev
+
+
+## ⚙️ Tech Stack
+
+- **React.js** - Frontend UI framework
+- **Tailwind CSS** - Utility-first styling
+- **Vite** - Blazing fast bundler
+- **Cloudflare Pages** - Deployment platform
+
+
+---
+
+## 📸 Preview
+
+https://tshirt-store-app.pages.dev/
+
+
+
+> Inspired by modern e-commerce UI/UX and open-source creativity.  
