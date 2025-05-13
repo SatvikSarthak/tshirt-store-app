@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const themes = [
   {
     bg: "bg-gradient-to-br from-gray-100 to-gray-300",
-    accent: "border-gray-500 focus:ring-gray-400", 
+    accent: "border-gray-500 focus:ring-gray-400",
   },
   {
     bg: "bg-gradient-to-br from-indigo-100 to-indigo-300",
-    accent: "border-indigo-500 focus:ring-indigo-400", 
+    accent: "border-indigo-500 focus:ring-indigo-400",
   },
   {
     bg: "bg-gradient-to-br from-emerald-100 to-emerald-300",
@@ -19,7 +19,7 @@ const themes = [
   },
   {
     bg: "bg-gradient-to-br from-orange-100 to-yellow-200",
-    accent: "border-yellow-500 focus:ring-yellow-400", 
+    accent: "border-yellow-500 focus:ring-yellow-400",
   },
 ];
 const FloatingInput = ({
@@ -112,27 +112,36 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <FloatingInput
                   label="Height in cm"
+                  type="number"
                   name="height"
                   register={register}
                   themeClass={themes[theme].accent}
-                  options={{ required: "Height is required" }}
+                  options={{
+                    required: "Height is required",
+                    valueAsNumber: true, 
+                  }}
                 />
                 {errors.height && (
                   <p className="text-red-500 text-sm">
                     {errors.height.message}
                   </p>
                 )}
-
                 <FloatingInput
-                  label="Width"
+                  label="Width in cm"
+                  type="number"
                   name="width"
                   register={register}
                   themeClass={themes[theme].accent}
-                  options={{ required: "Width is required" }}
+                  options={{
+                    required: "Width is required",
+                    valueAsNumber: true, 
+                  }}
+              
                 />
-
                 {errors.width && (
-                  <p className="text-red-500 text-sm">{errors.width.message}</p>
+                  <p className="text-red-500 text-sm">
+                    {errors.width.message}
+                  </p>
                 )}
               </div>
 
